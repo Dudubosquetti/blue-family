@@ -51,14 +51,18 @@ canvas { max-width:100%; }
       <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-blue-600 to-indigo-600 flex items-center justify-center text-white"><i class="fa-solid fa-wallet text-xl"></i></div>
       <div><h2 class="text-xl font-bold text-slate-900 dark:text-white">Blue Family</h2><p class="text-sm text-slate-500 dark:text-slate-400">Finanças compartilhadas da família</p></div>
     </div>
-    <div id="familyPanel">
+   <div id="familyPanel">
       <h3 class="font-bold text-lg mb-1 text-slate-900 dark:text-white">Compartilhar com a família</h3>
       <p class="text-sm text-slate-500 dark:text-slate-400 mb-5">Sem e-mail e sem senha. Crie uma família ou digite o código que recebeu.</p>
+      
+      <!-- Adicionado type="button" no botão de criar -->
       <label class="block text-sm font-medium mb-2">Nome da família<input id="blueFamilyName" class="mt-1 w-full rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-3 py-3" value="Minha Família" maxlength="60"></label>
-      <button id="blueCreateFamily" class="w-full rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 mb-4">Criar família e gerar código</button>
+      <button type="button" id="blueCreateFamily" class="w-full rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 mb-4">Criar família e gerar código</button>
+      
       <div class="border-t border-slate-200 dark:border-slate-700 pt-4">
-        <label class="block text-sm font-medium">Já tem um código familiar?<input id="blueInviteCode" autocomplete="off" class="mt-1 w-full uppercase tracking-widest text-center rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-3 py-3" placeholder="EX: BLUE-XXXXXXXXXXXX" maxlength="25"></label>
-        <button id="blueJoinFamily" class="w-full rounded-xl border border-blue-600 text-blue-700 dark:text-blue-300 font-semibold py-3 mt-3">Entrar na família</button>
+        <label class="block text-sm font-medium">Já tem um código familiar?<input id="blueInviteCode" autocomplete="off" class="mt-1 w-full uppercase tracking-widest text-center rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-700 px-3 py-3" placeholder="EX: BLUE-XXXXXXXXXXXX" maxlength="17"></label>
+        <!-- Adicionado type="button" no botão de entrar -->
+        <button type="button" id="blueJoinFamily" class="w-full rounded-xl border border-blue-600 text-blue-700 dark:text-blue-300 font-semibold py-3 mt-3">Entrar na família</button>
       </div>
     </div>
     <div id="blueAuthMessage" role="status" class="hidden mt-4 rounded-xl bg-blue-50 dark:bg-blue-950/50 text-blue-800 dark:text-blue-200 p-3 text-sm"></div>
